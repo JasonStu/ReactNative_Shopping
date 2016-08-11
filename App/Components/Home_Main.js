@@ -8,18 +8,33 @@ import {
     Image,
     ScrollView,
     ListView,
-    PixelRatio
+    PixelRatio,
+    InteractionManager,
 } from 'react-native';
 import Common from '../Commom/constants';
 import Swiper from 'react-native-swiper';
+import {HomeAction} from '../Action/HomeAction';
+import Loading from '../Commom/Loading';
+
+
 import HomeSwioer from '../Pages/HomeSwiper';
 import HomeList102 from '../Pages/HomeList102';
 import Home104 from '../Pages/Home104';
 import Home18 from '../Pages/Home18';
 import Home11 from '../Pages/Home11';
+import Home4 from '../Pages/Home4';
+import Home1 from '../Pages/Home1';
+import Home8 from '../Pages/Home8';
+import Home10 from '../Pages/Home10';
+import Home12 from '../Pages/Home12';
+
+let isRefreshing = false;
+let isLoading = true;
+let offest = '';
+let tag = '';
 
 
-
+let limit = 21;//为了使得api跑起来要加上
 export default class Home_Main extends Component {
     constructor(props) {
         super(props);
@@ -32,32 +47,53 @@ export default class Home_Main extends Component {
             }),
         };
     }
+
+    componentDidMount() {
+        InteractionManager.runAfterInteractions(() => {
+            const {dispatch, HomeReducer} = this.props;
+            //    HomeReducer.isLoading = true;
+            dispatch(HomeAction(this.props.type, tag, offest, limit, isRefreshing, isLoading));
+        });
+    }
     render() {
-        let homeList = Common.HomeDate;
-        // console.log(homeList.module)
+        const { HomeReducer } = this.props;
+        console.log(this.props);
+        let homeList = [];
+        if (this.props.type === 1) { //首页
+
+            homeList = HomeReducer.HomeList;
+        } else {
+            console.log(this.props);
+
+            homeList = HomeReducer.UGOList;
+
+        }
+
+        // let homeList = HomeReducer.HomeList;
 
         return (
             <View style={styles.container}>
-
-                <ListView
-                    dataSource={this.state.dataSource.cloneWithRows(homeList.module) }
-                    renderRow={this._renderRow}
-                    enableEmptySections={true}
-                    initialListSize= {40}
-                    style={styles.listView}
-                    />
-
+                {HomeReducer.isLoading ? <Loading /> :
+                    <ListView
+                        dataSource={this.state.dataSource.cloneWithRows(homeList.module ? homeList.module : []) }
+                        renderRow={this._renderRow}
+                        enableEmptySections={true}
+                        initialListSize= {40}
+                        style={styles.listView}
+                        />
+                }
             </View>
 
         );
 
     }
 
-    _renderRow(rowDate, rowID,rowIdentities) {
-        console.log('rowIDssss============>'+rowIdentities);
+    _renderRow(rowDate, rowID, rowIdentities) {
+        // console.log('rowIDssss============>'+rowIdentities);
         switch (parseInt(rowDate.moduleStyle)) {
+
             case 101:
-                if (rowIdentities == parseInt(rowDate.modulePosition)-1) {
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
                     return (
                         <View >
                             <HomeSwioer bannerDate={rowDate}/>
@@ -67,7 +103,7 @@ export default class Home_Main extends Component {
                 }
 
             case 102:
-                if (rowIdentities == parseInt(rowDate.modulePosition)-1) {
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
                         <View >
@@ -76,7 +112,7 @@ export default class Home_Main extends Component {
                     );
                 }
             case 104:
-                if (rowIdentities == parseInt(rowDate.modulePosition)-1) {
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
                         <View >
@@ -85,7 +121,7 @@ export default class Home_Main extends Component {
                     );
                 }
             case 18:
-                if (rowIdentities == parseInt(rowDate.modulePosition)-1) {
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
                         <View >
@@ -94,7 +130,7 @@ export default class Home_Main extends Component {
                     );
                 }
             case 11:
-                if (rowIdentities == parseInt(rowDate.modulePosition)-1) {
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
                         <View >
@@ -102,12 +138,57 @@ export default class Home_Main extends Component {
                         </View>
                     );
                 }
-            default:
-                return  (
-                        <View style={{width:Common.window.width,height:100,backgroundColor:'blue'}}>
-                            
+            case 4:
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
+
+                    return (
+                        <View >
+                            <Home4 module={rowDate}/>
                         </View>
-                    );;
+                    );
+                }
+            case 1:
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
+
+                    return (
+                        <View >
+                            <Home1 module={rowDate}/>
+                        </View>
+                    );
+                }
+            case 10:
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
+
+                    return (
+                        <View >
+                            <Home10 module={rowDate}/>
+                        </View>
+                    );
+                }
+            case 8:
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
+
+                    return (
+                        <View >
+                            <Home8 module={rowDate}/>
+                        </View>
+                    );
+                }
+            case 12:
+                if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
+
+                    return (
+                        <View >
+                            <Home12 module={rowDate}/>
+                        </View>
+                    );
+                }
+            default:
+                return (
+                    <View style={{ width: Common.window.width, height: 100, backgroundColor: 'blue' }}>
+
+                    </View>
+                );;
         }
     }
 
@@ -115,7 +196,7 @@ export default class Home_Main extends Component {
 const styles = StyleSheet.create({
     container: {
         width: Common.window.width,
-        height: Common.window.height - 90 - 50,
+        height: Common.window.height - 90 - 60,
         backgroundColor: 'white',
     },
     contentContainer: {

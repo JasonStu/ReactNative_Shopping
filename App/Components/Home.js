@@ -40,11 +40,14 @@ export default class Home extends Component {
                     tabBarPosition='top'
                     >
                     <View tabLabel="首页" style={styles.center}>
-                        <Home_Main {...this.props}/>
+                        {/* 1 -> 就是代表首页的意思*/}
+                        <Home_Main {...this.props} type ={1}/>
                     </View>
 
                     <View tabLabel="海外购" style={styles.center}>
-                        <Text >内容：海外购</Text>
+                        {/* 2 -> 就是代表海外购的意思*/}
+
+                        <Home_Main {...this.props} type ={2}/>
                     </View>
                     <View tabLabel="分享购" style={styles.center}>
                         <Text >内容：分享购</Text>

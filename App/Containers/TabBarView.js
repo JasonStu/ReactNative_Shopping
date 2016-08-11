@@ -20,9 +20,13 @@ import Classify from '../Components/Classify';
 import ShoppingCart from '../Components/ShoppingCart';
 import AboutMe from '../Components/AboutMe';
 
+import HomeContainer from './HomeContainer';
+
+
+
 
 const tabBarItems = [
-    { title: '首页', icon:() => <Icon name={'md-home'} size={30} /> , component: Home },
+    { title: '首页', icon:() => <Icon name={'md-home'} size={30} /> , component: HomeContainer },
     { title: '品牌', icon:() => <Icon name={'md-bookmark'} size={30} />, component: Brand },
     { title: '分类', icon: () =><Icon name={'md-apps'} size={30} />, component: Classify },
     { title: '购物车', icon: () =><Icon name={'md-cart'} size={30} /> , component: ShoppingCart },

@@ -9,8 +9,8 @@ export const RECEIVE_HOME_LIST = 'RECEIVE_HOME_LIST';
 // export const FETCH_DETIAL_DATE = 'FETCH_DETIAL_DATE';
 // export const RECEIVE_DETIAL_DATE = 'RECEIVE_DETIAL_DATE';
 //分类页actions
-export const FETCH_CLASS_LIST = 'FETCH_CLASS_LIST';
-export const RECEIVE_CLASS_LIST = 'RECEIVE_CLASS_LIST';
+export const FETCH_SEAUGO_LIST = 'FETCH_SEAUGO_LIST';
+export const RECEIVE_SEAUGO_LIST = 'RECEIVE_SEAUGO_LIST';
 
 //分类详细页actions
 

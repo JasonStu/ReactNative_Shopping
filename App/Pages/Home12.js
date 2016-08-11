@@ -11,8 +11,10 @@ import {
     PixelRatio
 } from 'react-native';
 import Common from '../Commom/constants';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-export default class HomeList extends Component {
+
+export default class Home12 extends Component {
     constructor(props) {
         super(props);
         // console.log(props)
@@ -35,23 +37,32 @@ export default class HomeList extends Component {
                         source={{ uri: rowDate.image }}
                         style={styles.rowDateImage}
                         />
-                    <Text style={{ marginTop: 10, color: 'gray', fontSize: 13, textAlign: 'center' }}>{rowDate.title} </Text>
+                    <Text numberOfLines={1} style={{ fontSize: 11, width: 100 }}> {rowDate.commodityName}</Text>
+
+                    <Text style={{ color: 'red', fontSize: 15 }}>{'¥' + rowDate.secSkillPrice} </Text>
+
                 </TouchableOpacity>
+                
             </View>
         );
     }
     render() {
 
         return (
-            <View>
-                <ListView
-                    dataSource={this.state.dataSource.cloneWithRows(this.props.listDate.moduleDetail ? this.props.listDate.moduleDetail : []) }
-                    renderRow={this._renderRow}
-                    contentContainerStyle={styles.list}
-                    enableEmptySections={true}
-                    initialListSize= {8}
-                    style={styles.listView}
-                    />
+            <View style={styles.StyleFor18}>
+
+                <View >
+                    <ListView
+                        horizontal={true}
+                        dataSource={this.state.dataSource.cloneWithRows(this.props.module.moduleDetail ? this.props.module.moduleDetail : []) }
+                        renderRow={this._renderRow}
+                        contentContainerStyle={styles.list}
+                        enableEmptySections={true}
+                        initialListSize= {40}
+                        style={styles.listView}
+                        />
+                </View>
+
             </View>
         );
     }
@@ -59,26 +70,36 @@ export default class HomeList extends Component {
 
 const styles = StyleSheet.create({
     row: {
-        height: 100,
-        width: Common.window.width / 4,
+        height: 180,
+        width: Common.window.width / 3.5 ,
         justifyContent: 'center',
         flex: 1,
         alignItems: 'center',
     },
     rowDateImage: {
-        height: 50,
-        width: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 130,
+        width: 100,
     },
     list: {
         justifyContent: 'center',
         flexDirection: 'row',
         alignItems: 'center',
-        flexWrap: 'wrap',
+        flexWrap: 'nowrap',
 
     },
     listView: {
         backgroundColor: 'white',
     },
+    StyleFor18: {
+        flexDirection: 'column',
+        backgroundColor: 'black',
+    },
+
+    text1: {
+        marginLeft: 10,
+    }
 });
 
 

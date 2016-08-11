@@ -47,6 +47,7 @@ let Util = {
             })
              .catch((err) => {
                 reject(new Error(err));
+                console.warn(err);
             }).done();
         });
     }
