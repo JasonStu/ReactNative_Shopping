@@ -6,9 +6,11 @@ import {connect} from 'react-redux';
 import Home from '../Components/Home';
 
 class HomeContainer extends React.Component {
+    
     render() {
         return (
             <Home {...this.props} />
+            
         )
     }
 }

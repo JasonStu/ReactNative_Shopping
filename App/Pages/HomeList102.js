@@ -29,7 +29,7 @@ export default class HomeList extends Component {
             <View style={styles.row}>
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是102')} }
                     >
                     <Image
                         source={{ uri: rowDate.image }}

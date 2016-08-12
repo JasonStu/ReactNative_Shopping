@@ -31,7 +31,7 @@ export default class Home12 extends Component {
             <View style={styles.row}>
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是12')} }
                     >
                     <Image
                         source={{ uri: rowDate.image }}

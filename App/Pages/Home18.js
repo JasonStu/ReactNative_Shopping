@@ -31,7 +31,7 @@ export default class Home18 extends Component {
             <View style={styles.row}>
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是18')} }
                     >
                     <Image
                         source={{ uri: rowDate.image }}
@@ -39,7 +39,8 @@ export default class Home18 extends Component {
                         />
                     <Text style={{ marginTop: 10, color: 'red', fontSize: 15, textAlign: 'center' }}>{'¥'+rowDate.secSkillPrice} </Text>
                     <Text style={{color: 'gray', fontSize: 13, textAlign: 'center' ,textDecorationLine: 'line-through'}}>{'¥'+rowDate.publicPrice} </Text>
-                </TouchableOpacity>
+               
+               </TouchableOpacity>
             </View>
         );
     }
@@ -81,7 +82,7 @@ export default class Home18 extends Component {
 const styles = StyleSheet.create({
     row: {
         height: 100,
-        width: Common.window.width / 4,
+        width: Common.window.width / 4 ,
         justifyContent: 'center',
         flex: 1,
         alignItems: 'center',

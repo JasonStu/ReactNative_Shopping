@@ -29,7 +29,7 @@ export default class Home4 extends Component {
             <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'white' }}>
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是4')} }
                     >
                     <Image
                         source={{ uri: this.props.module.moduleDetail[0].image }}
@@ -39,7 +39,7 @@ export default class Home4 extends Component {
 
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是4')} }
                     >
                     <Image
                         source={{ uri: this.props.module.moduleDetail[1].image }}
@@ -49,7 +49,7 @@ export default class Home4 extends Component {
 
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是4')} }
                     >
                     <Image
                         source={{ uri: this.props.module.moduleDetail[2].image }}

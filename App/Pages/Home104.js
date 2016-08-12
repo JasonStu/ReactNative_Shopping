@@ -28,8 +28,13 @@ export default class Home104 extends Component {
                     style={{ width: 100, height: 20, marginLeft: 10 }}
                     />
                 <View style={{ marginLeft: 10, backgroundColor: 'gray', width: 2 / PixelRatio.get(), height: 30 }}/>
+                <TouchableOpacity
+                    activeOpacity={0.75}
+                    onPress={() => { alert('我是104') } }
+                    >
+                    <Text numberOfLines={1} style={{ fontSize: 12, width: Common.window.width - 150 }}> {this.props.module.moduleDetail[0].title}</Text>
+                </TouchableOpacity>
 
-                <Text numberOfLines={1} style={{ fontSize: 12, width: Common.window.width - 150 }}> {this.props.module.moduleDetail[0].title}</Text>
             </View>
 
         );

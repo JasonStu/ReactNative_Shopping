@@ -38,7 +38,6 @@ let limit = 21;//为了使得api跑起来要加上
 export default class Home_Main extends Component {
     constructor(props) {
         super(props);
-        // console.log(props)
         this._renderRow = this._renderRow.bind(this);
 
         this.state = {
@@ -95,7 +94,7 @@ export default class Home_Main extends Component {
             case 101:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <HomeSwioer bannerDate={rowDate}/>
                         </View>
 
@@ -106,8 +105,9 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <HomeList102 listDate={rowDate}/>
+
                         </View>
                     );
                 }
@@ -115,7 +115,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home104 module={rowDate}/>
                         </View>
                     );
@@ -124,7 +124,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home18 listDate={rowDate}/>
                         </View>
                     );
@@ -133,8 +133,9 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home11 module={rowDate}/>
+                            
                         </View>
                     );
                 }
@@ -142,7 +143,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home4 module={rowDate}/>
                         </View>
                     );
@@ -151,7 +152,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home1 module={rowDate}/>
                         </View>
                     );
@@ -160,7 +161,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home10 module={rowDate}/>
                         </View>
                     );
@@ -169,7 +170,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home8 module={rowDate}/>
                         </View>
                     );
@@ -178,7 +179,7 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View >
+                        <View style= {styles.cellStyle}>
                             <Home12 module={rowDate}/>
                         </View>
                     );
@@ -197,16 +198,21 @@ const styles = StyleSheet.create({
     container: {
         width: Common.window.width,
         height: Common.window.height - 90 - 60,
-        backgroundColor: 'white',
+        backgroundColor: 'rgb(240, 240, 240)',
+        
     },
     contentContainer: {
-        backgroundColor: "#ff0000",
+        backgroundColor: 'rgb(240, 240, 240)'
     },
 
 
     listView: {
         height: Common.window.height - 90 - 60,
         backgroundColor: 'white',
+    },
+    cellStyle:{
+        backgroundColor: 'rgb(240, 240, 240)'
+
     },
 
 });

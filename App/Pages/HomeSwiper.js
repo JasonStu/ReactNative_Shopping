@@ -34,7 +34,9 @@ export default class HomeSwiper extends Component {
             >
             {this.props.bannerDate.moduleDetail.map((banner) => {
                 return (
-                    <TouchableOpacity key={banner.title} activeOpacity={0.75}>
+                    <TouchableOpacity key={banner.title} activeOpacity={0.75}
+                                        onPress={()=>{alert('我是banner')} }
+>
                         <Image
                             style={styles.bannerImage}
                             source={{ uri: banner.image }}

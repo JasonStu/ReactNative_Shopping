@@ -29,16 +29,15 @@ export default class Home8 extends Component {
         return (
 
             <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'white' }}>
-
+           
                 {
                     dateArray.map((objet, i) => {
-
                         return (
                             <TouchableOpacity
                                 key={i}
                                 activeOpacity={0.75}
                                 style={{flexDirection: 'column'}}
-                                // onPress={alert('hello') }
+                                onPress={()=>{alert('8')} }
                                 >
                                 <Image
                                     source={{ uri: objet.image }}

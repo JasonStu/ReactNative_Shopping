@@ -9,12 +9,14 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    WebView
 } from 'react-native';
 
 import SearchHeader from '../Components/SearchHeader';
 import ScrollableTabView, {DefaultTabBar, ScrollableTabBar} from 'react-native-scrollable-tab-view';
 import Home_Main from '../Components/Home_Main';
+import Common from '../Commom/constants';
 
 
 export default class Home extends Component {
@@ -26,11 +28,12 @@ export default class Home extends Component {
             <View style={styles.container}>
                 <SearchHeader
                     searchAction={() => {
-
+                        alert('search')
                     } }
                     scanAction={() => alert('scan') }
                     />
                 <ScrollableTabView
+
                     renderTabBar={() => <DefaultTabBar underlineHeight={2} textStyle={{ fontSize: 13, marginTop: 6 }} style={{ height: 30 }}
                         />}
                     tabBarBackgroundColor="#fcfcfc"
@@ -50,7 +53,13 @@ export default class Home extends Component {
                         <Home_Main {...this.props} type ={2}/>
                     </View>
                     <View tabLabel="分享购" style={styles.center}>
-                        <Text >内容：分享购</Text>
+                        <WebView style={styles.webview_style}
+                            source={{ url: 'http://m.yougou.com/p-7864a7fa0bd24384b8871c8375a08060' }}                     
+                                //    startInLoadingState={true}
+                            domStorageEnabled={true}
+                            javaScriptEnabled={true}
+                            >
+                        </WebView>
                     </View>
 
                 </ScrollableTabView>
@@ -64,7 +73,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
 
-        backgroundColor: '#F5FCFF',
+        backgroundColor: 'rgb(240, 240, 240)'
     },
     welcome: {
         fontSize: 20,
@@ -75,5 +84,11 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: 'rgb(240, 240, 240)'
+
     },
+    webview_style:{
+        height:Common.window.height-90-60,
+        width:Common.window.width,
+    }
 });

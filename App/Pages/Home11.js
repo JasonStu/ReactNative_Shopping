@@ -26,7 +26,7 @@ export default class Home11 extends Component {
         // console.log('imageHeight====>' + imageHeight);
         return (
 
-            <View style={{ flex: 1, flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center' }}>
+            <View style={{ flex: 1, flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center',backgroundColor: 'rgb(240, 240, 240)',height:this.props.module.moduleHeight!=='50'? imageHeight+15 :imageHeight}}>
                 <View style={{ alignItems: 'center',flexDirection: 'row', backgroundColor: 'rgb(240, 240, 240)', height: this.props.module.moduleTitle !== '' ? 30 : 0 }}>
                     <View style={{backgroundColor:'red',width:5,height: this.props.module.moduleTitle !== '' ? 20 : 0}}>
                     </View>
@@ -34,7 +34,7 @@ export default class Home11 extends Component {
                 </View>
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    // onPress={alert('hello') }
+                    onPress={()=>{alert('我是11')} }
                     style={{ alignItems: 'center' }}
                     >
 

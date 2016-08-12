@@ -30,7 +30,7 @@ export default class Home1 extends Component {
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <TouchableOpacity
                         activeOpacity={0.75}
-                        // onPress={alert('hello') }
+                    onPress={()=>{alert('我是1')} }
                         >
                         <Image
                             source={{ uri: this.props.module.moduleDetail[0].image }}
@@ -43,7 +43,7 @@ export default class Home1 extends Component {
                 <View style={{ flexDirection: 'column', alignItems: 'center' }}>
                     <TouchableOpacity
                         activeOpacity={0.75}
-                        // onPress={alert('hello') }
+                    onPress={()=>{alert('我是1')} }
                         >
                         <Image
                             source={{ uri: this.props.module.moduleDetail[1].image }}
@@ -54,7 +54,7 @@ export default class Home1 extends Component {
                     <View style={{ backgroundColor: 'gray', width: Common.window.width * 2 / 3, height: 2 / PixelRatio.get() }}/>
                     <TouchableOpacity
                         activeOpacity={0.75}
-                        // onPress={alert('hello') }
+                    onPress={()=>{alert('我是1')} }
                         >
                         <Image
                             source={{ uri: this.props.module.moduleDetail[2].image }}
