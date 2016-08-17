@@ -12,9 +12,11 @@ import {
 } from 'react-native';
 import Common from '../Commom/constants';
 import Icon from 'react-native-vector-icons/Ionicons';
+import ShoppingCarListViewCell from '../Pages/ShoppingCarListViewCell';
 
+let date = Common.ShoppingCarDate;
 
-export default class Home12 extends Component {
+export default class ShoppingCarListView extends Component {
     constructor(props) {
         super(props);
         // console.log(props)
@@ -27,22 +29,12 @@ export default class Home12 extends Component {
     }
 
     _renderRow(rowDate) {
+                    console.log(rowDate)
+
         return (
             <View style={styles.row}>
-                <TouchableOpacity
-                    activeOpacity={0.75}
-                    onPress={()=>{alert('我是12')} }
-                    >
-                    <Image
-                        source={{ uri: rowDate.image }}
-                        style={styles.rowDateImage}
-                        />
-                    <Text numberOfLines={1} style={{ fontSize: 11, width: 100 }}> {rowDate.commodityName}</Text>
-
-                    <Text style={{ color: 'red', fontSize: 15 }}>{'¥' + rowDate.secSkillPrice} </Text>
-
-                </TouchableOpacity>
-                
+            <ShoppingCarListViewCell module={rowDate.car_productlist} {...this.props}/>
+            <View style={{width:Common.window.width,height:Common.window.height/70}}></View>
             </View>
         );
     }
@@ -53,10 +45,11 @@ export default class Home12 extends Component {
 
                 <View >
                     <ListView
-                        horizontal={true}
-                        dataSource={this.state.dataSource.cloneWithRows(this.props.module.moduleDetail ? this.props.module.moduleDetail : []) }
+                        dataSource={this.state.dataSource.cloneWithRows( date.shopcargroup) }
                         renderRow={this._renderRow}
-                        contentContainerStyle={styles.list}
+                        // dataSource={this.state.dataSource.cloneWithRows([1,2,3,3,32,3,3,32,3,3,32,3,3,32,3,3,32,3,3,3,3]) }
+                        // dataSource={this.state.dataSource.cloneWithRows([[1,2,3],[1,2,3,4,4,4,4,4,4,4],[1],[1,2],[1,2,3,4,4,4],[1],[1,2],[1,2,3,3]]) }
+
                         enableEmptySections={true}
                         initialListSize= {10}
                         style={styles.listView}
@@ -65,42 +58,29 @@ export default class Home12 extends Component {
 
             </View>
         );
+
     }
 }
 
 const styles = StyleSheet.create({
     row: {
-        height: 180,
-        width: Common.window.width / 3.5 ,
-        justifyContent: 'center',
-        flex: 1,
-        alignItems: 'center',
-    },
-    rowDateImage: {
+        width: Common.window.width ,
         justifyContent: 'center',
         alignItems: 'center',
-        height: 130,
-        width: 100,
-    },
-    list: {
-        justifyContent: 'center',
-        flexDirection: 'row',
-        alignItems: 'center',
-        flexWrap: 'nowrap',
-
     },
     listView: {
-        backgroundColor: 'white',
+        backgroundColor: 'rgb(230, 230, 230)',
     },
     StyleFor18: {
-        flexDirection: 'column',
-        backgroundColor: 'black',
+        flexDirection: 'row',
+         height: Common.window.height-60-20-40,
+        width: Common.window.width ,
     },
 
     text1: {
         marginLeft: 10,
     }
-});
+}); 
 
 
 

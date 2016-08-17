@@ -34,6 +34,8 @@ const Button = ({ onPress, disabled, style, containerStyle, text }) => (
     <TouchableOpacity
         onPress={onPress}
         disabled={disabled}
+                            activeOpacity={0.75}
+
         >
         <View style={containerStyle}>
             <Text style={style}>

@@ -11,13 +11,15 @@ import {
   Text,
   View
 } from 'react-native';
-
+import ShoppingCarListView from '../Pages/ShoppingCarListView';
 export default class ShoppingCart extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View >
+        <ShoppingCarListView {...this.props}/>
+
         <Text style={styles.welcome}>
-            购物车
+          购物车
         </Text>
 
       </View>
@@ -28,13 +30,12 @@ export default class ShoppingCart extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+
     backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    backgroundColor:'red',
   }
 });

@@ -15,182 +15,61 @@ import {
   ScrollView,
   ListView,
   PixelRatio,
+  InteractionManager,
 } from 'react-native';
 import Common from '../Commom/constants';
 import SearchHeader from '../Components/SearchHeader';
 import Buttom from '../Commom/Buttom';
+import BrandListView from '../Pages/BrandListView';
+import {BrandAction} from '../Action/BrandAction';
+import Loading from '../Commom/Loading';
 
-let date = {
-  "response": "brands",
-  "totalpage": "8",
-  "brands_title": [
-    {
-      "name": "推荐",
-      "id": ""
-    },
-    {
-      "name": "运动",
-      "id": "eaec32113fea4c87a0a231f5147040e0"
-    },
-    {
-      "name": "女鞋",
-      "id": "5da2011498fd4455afd2e29896a489d6"
-    },
-    {
-      "name": "男鞋",
-      "id": "1e7cd6973c7e4f0ab30e4f4a6281f19d"
-    },
-    {
-      "name": "户外",
-      "id": "32f8ddd36f4d4e5b965a3ac8b79c5c29"
-    },
-    {
-      "name": "男装",
-      "id": "4a93de5dfcf4404c93bcf851228577f3"
-    },
-    {
-      "name": "女装",
-      "id": "07e0610989b54e3381e032ebd05de897"
-    },
-    {
-      "name": "儿童",
-      "id": "5c166c0c914a48ca857ef865919a04e8"
-    }
-  ],
-  "advert_banner": [],
-  "brands_wall": [
-    {
-      "key": "推荐",
-      "value": [
-        {
-          "name": "阿迪达斯",
-          "brandEnglishName": "adidas",
-          "id": "1jJK",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/adidas430571977.jpg"
-        },
-        {
-          "name": "耐克",
-          "brandEnglishName": "nike",
-          "id": "FUYN",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/nike474091448.jpg"
-        },
-        {
-          "name": "百丽",
-          "brandEnglishName": "belle",
-          "id": "jHz8",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/belle430574722.jpg"
-        },
-        {
-          "name": "彪马",
-          "brandEnglishName": "puma",
-          "id": "45O5",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/puma430798128.jpg"
-        },
-        {
-          "name": "天美意",
-          "brandEnglishName": "teenmix",
-          "id": "Fbf5",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/teenmix483675534.jpg"
-        },
-        {
-          "name": "他她",
-          "brandEnglishName": "tata",
-          "id": "iU5u",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/tata430799032.jpg"
-        },
-        {
-          "name": "阿迪三叶草",
-          "brandEnglishName": "adidas Originals",
-          "id": "uOkv",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/adidasclassic430572126.jpg"
-        },
-        {
-          "name": "阿迪休闲",
-          "brandEnglishName": "adidas neo",
-          "id": "Cyz8",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/adidasneo430571994.jpg"
-        },
-        {
-          "name": "匡威",
-          "brandEnglishName": "converse",
-          "id": "MxXO",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/converse430539595.jpg"
-        },
-        {
-          "name": "思加图",
-          "brandEnglishName": "staccato",
-          "id": "Hfjt",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/staccato430798791.jpg"
-        },
-        {
-          "name": "茵奈儿",
-          "brandEnglishName": "innet",
-          "id": "Mckz",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/innet474093572.jpg"
-        },
-        {
-          "name": "百思图",
-          "brandEnglishName": "basto",
-          "id": "YDun",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/basto523422917.jpg"
-        },
-        {
-          "name": "NII",
-          "brandEnglishName": "NII",
-          "id": "0OBG",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/nii504849888.jpg"
-        },
-        {
-          "name": "森达",
-          "brandEnglishName": "senda",
-          "id": "50LY",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/senda430798535.jpg"
-        },
-        {
-          "name": "CHRIS.CHRISTY",
-          "brandEnglishName": "CHRIS.CHRISTY",
-          "id": "Ck9u",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/chrischristy490190045.jpg"
-        },
-        {
-          "name": "HUM",
-          "brandEnglishName": "HUM",
-          "id": "y303",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/hum491912321.jpg"
-        },
-        {
-          "name": "拔佳",
-          "brandEnglishName": "Bata",
-          "id": "6JEt",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/bata430574220.jpg"
-        },
-        {
-          "name": "NEW BALANCE",
-          "brandEnglishName": "New Balance",
-          "id": "kLfX",
-          "pic": "http://i2.ygimg.cn/pics/brandlogo/newbalance430797273.jpg"
-        },
-        {
-          "name": "NAIN",
-          "brandEnglishName": "NAIN",
-          "id": "xMU7",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/nain502454197.jpg"
-        },
-        {
-          "name": "李宁",
-          "brandEnglishName": "li-ning",
-          "id": "9nEx",
-          "pic": "http://i1.ygimg.cn/pics/brandlogo/lining430547326.jpg"
-        }
-      ]
-    }
-  ]
-}
+let Array = [];
+let passDate = {};
+let isRefreshing = false;
+let isLoading = true;
+let offest = '';
+let tag = '';
+let limit = 21;//为了使得api跑起来要加上
 
 export default class Brand extends Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      defaultNum: 0,
+      selectArray: [1],
+    };
+
+  }
+
+  componentDidMount() {
+    InteractionManager.runAfterInteractions(() => {
+      const {dispatch, BrandReducer} = this.props;
+      dispatch(BrandAction(1, tag, offest, limit, isRefreshing, isLoading));
+    });
+
+  }
+
+  onPress(type) {
+
+  }
 
   render() {
+
+    const { BrandReducer} = this.props;
+    passDate = BrandReducer.BrandDate;
+    if (passDate.brands_title !== undefined && Array.length < passDate.brands_title.length) {
+
+      passDate.brands_title.map((object, i) => {
+        if (i === 0) {
+          Array.push(1);
+        } else {
+          Array.push(0);
+        }
+      });
+    }
+
     const BrandNameStyle = {
       justifyContent: 'center',
       alignItems: 'center',
@@ -211,34 +90,57 @@ export default class Brand extends Component {
           } }
           scanAction={() => alert('scan') }
           />
-        <View style={styles.mainViewStyle}>
-          <View style={{ backgroundColor: 'white', width: Common.window.width / 4, height: Common.window.height - 60 - 60 }}>
-            <ScrollView >
-              {
-                date.brands_title.map((object, i) => {
-                      const isSelect = i;
+        {BrandReducer.isLoading ? <Loading /> :
 
-                  return (
-                    <Buttom
-                      key={i}
-                      containerStyle = {
-                        [BrandNameStyle, isSelect ? { backgroundColor: '#3e9ce9' } : { backgroundColor: '#fcfcfc' }]
-                      }
-                      style={[{ fontSize: 16, textAlign: 'center' },
-                        isSelect ? { color: '#fcfcfc' } : { color: 'black' }]}
-                      text={object.name}
-                      />
-                  );
+          <View style={styles.mainViewStyle}>
+            <View style={{ backgroundColor: 'white', width: Common.window.width / 4, height: Common.window.height - 60 - 60 }}>
+              <ScrollView >
+                {
+                  passDate.brands_title.map((object, i) => {
+                    const isSelect = this.state.selectArray[i];
+                    console.log('isSelect=====>' + this.state.selectArray);
+
+                    return (
+                      <Buttom
+                        key={i}
+                        containerStyle = {
+                          [BrandNameStyle, isSelect ? { backgroundColor: 'rgb(240, 240, 240)', borderRightWidth: 0 } : { backgroundColor: '#fcfcfc', borderRightWidth: 1 / PixelRatio.get() }]
+                        }
+                        style={[{ fontSize: 16, textAlign: 'center' },
+                          isSelect ? { color: 'red' } : { color: 'black' }]}
+                        text={object.name}
+                        onPress={() => {
+                          Array.map((object, i) => {
+                            Array[i] = 0;
+                          });
+                          Array.splice(i, 1, 1);
+                          this.setState({
+                            defaultNum: i,
+                            selectArray: Array,
+                          });
+                          InteractionManager.runAfterInteractions(() => {
+                            const {dispatch} = this.props;
+                            dispatch(BrandAction(i + 1, tag, offest, limit, isRefreshing, isLoading));
+                          });
+
+                        } }
+                        />
+                    );
+                  }
+
+                  )
                 }
+              </ScrollView>
+            </View>
+            <View style={{
+              backgroundColor: 'blue', width: Common.window.width * 3 / 4, height: Common.window.height - 60 - 60, justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <BrandListView module={passDate.brands_wall[0].value}/>
+            </View>
 
-                )
-              }
-            </ScrollView>
           </View>
-          <View style={{ backgroundColor: 'blue', width: Common.window.width * 3 / 4, height: Common.window.height - 60 - 60 }}>
-
-          </View>
-        </View>
+        }
       </View>
     );
   }

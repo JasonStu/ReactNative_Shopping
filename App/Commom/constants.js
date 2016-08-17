@@ -2142,6 +2142,688 @@ let HomeDate = {
 }
 */
 
+let ShoppingCarDate = {
+    "response": "car",
+    "car_total_size": "15",
+    "cny_car_size": "10",
+    "hkd_car_size": "0",
+    "ker_car_size": "5",
+    "ker_zf_car_size": "0",
+    "cny_total_price": "¥2319",
+    "cny_tempSaleAmount": "¥3266",
+    "cny_subAmount": "¥947",
+    "hkd_total_price": "¥0",
+    "hkd_tempSaleAmount": "¥0",
+    "hkd_subAmount": "¥0",
+    "ker_total_price": "¥199",
+    "ker_tempSaleAmount": "¥799",
+    "ker_subAmount": "¥600",
+    "ker_tip": "",
+    "taxAmount": "¥23.68",
+    "ker_zf_total_price": "￥0",
+    "ker_zf_tempSaleAmount": "￥0",
+    "ker_zf_subAmount": "￥0",
+    "taxAmountZf": "￥0",
+    "cny_firstOrder": "",
+    "hkd_firstOrder": "",
+    "ker_firstOrder": "",
+    "kerzf_firstOrder": "",
+    "shopcargroup": [
+        {
+            "title": "无促销活动商品",
+            "subtitle": "",
+            "group_subAmount": "",
+            "group_totalAmount": "￥856",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "f4a2e77f6a76deba42563b16e70f9966__n",
+                    "buyStatus": "1",
+                    "id": "100174135001",
+                    "commodityNo": "100174135",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "name": "Ist belle/百丽箱包蓝色十字纹牛皮女手袋1014ACX5",
+                    "size": "F",
+                    "number": "1",
+                    "stockNum": "130",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/belle/2015/100174135/100174135_01_s.jpg?9",
+                    "color": "蓝色",
+                    "type": "0",
+                    "activity_desc": "",
+                    "activeid": "",
+                    "activityType": "0",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "428"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "428"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "821c2e6b2320fd6ca538dd7b72d8dbb1__n",
+                    "buyStatus": "1",
+                    "id": "100174134001",
+                    "commodityNo": "100174134",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "name": "Ist belle/百丽箱包玫红十字纹牛皮女手袋1014ACX5",
+                    "size": "F",
+                    "number": "1",
+                    "stockNum": "2",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/belle/2015/100174134/100174134_01_s.jpg?7",
+                    "color": "玫红",
+                    "type": "0",
+                    "activity_desc": "",
+                    "activeid": "",
+                    "activityType": "0",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "428"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "428"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "单品立减",
+            "subtitle": "下单立减150.0元",
+            "group_subAmount": "节省230元",
+            "group_totalAmount": "￥508",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "98c053e1a94f8b1a61b36258141b77b0__m",
+                    "buyStatus": "1",
+                    "id": "100467665004",
+                    "commodityNo": "100467665",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": [
+                            {
+                                "annMarkText": "269",
+                                "annMarkName": "店庆价格",
+                                "commodityMarkPic": "http://pic.yougou.com/pics/mobile/app/yearcelebrate/car/ios/1242-310x50.png"
+                            }
+                        ]
+                    },
+                    "name": "adidas阿迪达斯2016年新款男子场下休闲系列篮球鞋AW5087",
+                    "size": "43",
+                    "number": "1",
+                    "stockNum": "137",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/adidas/2016/100467665/100467665_01_s.jpg?2",
+                    "color": "学院藏青蓝/红荧光/亮白",
+                    "type": "0",
+                    "activity_desc": "运动-8.15截止立减-接券",
+                    "activeid": "98c053e1a94f8b1a61b36258141b77b0__m",
+                    "activityType": "9",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "469"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "469"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "80d9b05df729517a24534d53cc7c949b__m",
+                    "buyStatus": "1",
+                    "id": "100432256005",
+                    "commodityNo": "100432256",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": [
+                            {
+                                "annMarkText": "179",
+                                "annMarkName": "店庆价格",
+                                "commodityMarkPic": "http://pic.yougou.com/pics/mobile/app/yearcelebrate/car/ios/1242-310x50.png"
+                            }
+                        ]
+                    },
+                    "name": "adidas阿迪达斯2016年新款男子激情赛场系列T恤AO2692",
+                    "size": "XL",
+                    "number": "1",
+                    "stockNum": "87",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/adidas/2016/100432256/100432256_01_s.jpg?2",
+                    "color": "白色",
+                    "type": "0",
+                    "activity_desc": "运动-8.15截止立减-接券",
+                    "activeid": "80d9b05df729517a24534d53cc7c949b__m",
+                    "activityType": "9",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "269"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "269"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "f37d0a2f0a3de361a0ce0c4851022a0b__u",
+                    "buyStatus": "0",
+                    "id": "100432199004",
+                    "commodityNo": "100432199",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": [
+                            {
+                                "annMarkText": "179",
+                                "annMarkName": "店庆价格",
+                                "commodityMarkPic": "http://pic.yougou.com/pics/mobile/app/yearcelebrate/car/ios/1242-310x50.png"
+                            }
+                        ]
+                    },
+                    "name": "adidas阿迪达斯2016年新款男子激情赛场系列梭织短裤AI0731",
+                    "size": "S",
+                    "number": "1",
+                    "stockNum": "7",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/adidas/2016/100432199/100432199_01_s.jpg?2",
+                    "color": "黑色",
+                    "type": "0",
+                    "activity_desc": "运动-8.15截止立减-接券",
+                    "activeid": "f37d0a2f0a3de361a0ce0c4851022a0b__u",
+                    "activityType": "9",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "269"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "269"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "单品立减",
+            "subtitle": "下单立减50.0元",
+            "group_subAmount": "",
+            "group_totalAmount": "",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "216b9496c29e67843bfb0f0c738c373b__u",
+                    "buyStatus": "0",
+                    "id": "100435086001",
+                    "commodityNo": "100435086",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "name": "adidas阿迪达斯2016年新款中性训练系列双肩包AJ9936",
+                    "size": "F",
+                    "number": "1",
+                    "stockNum": "5554",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/adidas/2016/100435086/100435086_01_s.jpg?2",
+                    "color": "黑色",
+                    "type": "0",
+                    "activity_desc": "运动-8.15截止立减-不接券",
+                    "activeid": "216b9496c29e67843bfb0f0c738c373b__u",
+                    "activityType": "9",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "199"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "199"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "限时抢",
+            "subtitle": "限时抢",
+            "group_subAmount": "节省200元",
+            "group_totalAmount": "￥428",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "25637452ed4e7b818401d9d829eb9101__m",
+                    "buyStatus": "1",
+                    "id": "100196038004",
+                    "commodityNo": "100196038",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": [
+                            {
+                                "annMarkText": "418",
+                                "annMarkName": "店庆价格",
+                                "commodityMarkPic": "http://pic.yougou.com/pics/mobile/app/yearcelebrate/car/ios/1242-310x50.png"
+                            }
+                        ]
+                    },
+                    "name": "CAT/卡特深棕色专柜同款男休闲鞋粗犷装备(Rugged)P716368E3YMR37",
+                    "size": "43",
+                    "number": "1",
+                    "stockNum": "30",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/cat/2015/100196038/100196038_01_s.jpg?5",
+                    "color": "深棕色",
+                    "type": "0",
+                    "activity_desc": "卡特迈乐限时抢不接券",
+                    "activeid": "25637452ed4e7b818401d9d829eb9101__m",
+                    "activityType": "2",
+                    "price1": {
+                        "key": "特惠价:",
+                        "value": "428"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "428"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "限时抢",
+            "subtitle": "限时抢",
+            "group_subAmount": "节省300元",
+            "group_totalAmount": "￥428",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "e06f5829851c02e09a512d419a676868__m",
+                    "buyStatus": "1",
+                    "id": "100353440004",
+                    "commodityNo": "100353440",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "name": "CAT卡特2016春夏深灰色牛皮男休闲鞋粗犷装备(Rugged)P719927F1YMR03",
+                    "size": "43",
+                    "number": "1",
+                    "stockNum": "88",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/cat/2016/100353440/100353440_01_s.jpg?2",
+                    "color": "深灰色",
+                    "type": "0",
+                    "activity_desc": "韩加彬市场外推10爆款",
+                    "activeid": "e06f5829851c02e09a512d419a676868__m",
+                    "activityType": "2",
+                    "price1": {
+                        "key": "特惠价:",
+                        "value": "428"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "428"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "组合优惠",
+            "subtitle": "99元任选2件",
+            "group_subAmount": "节省217元",
+            "group_totalAmount": "￥99",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "82b366932d6cfcbbadd6512c39ed145e__m",
+                    "buyStatus": "1",
+                    "id": "100408191001",
+                    "commodityNo": "100408191",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "name": "Ist belle/百丽箱包2016年夏季时尚印花人造革女手抓包11599BX6",
+                    "size": "均码",
+                    "number": "1",
+                    "stockNum": "84",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/istbelle/2016/100408191/100408191_01_s.jpg?4",
+                    "color": "浅咖",
+                    "type": "0",
+                    "activity_desc": "主站2件99-不接券2016.8.8-8.17",
+                    "activeid": "82b366932d6cfcbbadd6512c39ed145e__m",
+                    "activityType": "11",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "158"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "158"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "SPYG",
+                    "rowid": "96643e3da2f9972ed74b4420108be45a__m",
+                    "buyStatus": "1",
+                    "id": "100408190001",
+                    "commodityNo": "100408190",
+                    "merchant": "百丽优购",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "name": "Ist belle/百丽箱包2016年夏季时尚印花人造革女手抓包11599BX6",
+                    "size": "均码",
+                    "number": "1",
+                    "stockNum": "9",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/istbelle/2016/100408190/100408190_01_s.jpg?4",
+                    "color": "淡紫",
+                    "type": "0",
+                    "activity_desc": "主站2件99-不接券2016.8.8-8.17",
+                    "activeid": "96643e3da2f9972ed74b4420108be45a__m",
+                    "activityType": "11",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "158"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "158"
+                    }
+                }
+            ]
+        }
+    ],
+    "shopcargroup_hkd": [],
+    "shopcargroup_ker": [
+        {
+            "title": "无促销活动商品",
+            "subtitle": "",
+            "group_subAmount": "",
+            "group_totalAmount": "",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "KOREA",
+                    "merchant": "商家",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "rowid": "1358350a2b3155399168ebd401145121__u",
+                    "buyStatus": "0",
+                    "id": "100366726001",
+                    "commodityNo": "100366726",
+                    "taxRate": "",
+                    "name": "首尔站：HUM 男士 新款 韩版时尚 黑色条纹圆领短袖T恤H152H011A-1 韩国 首尔站",
+                    "size": "85",
+                    "number": "1",
+                    "stockNum": "0",
+                    "state": "2",
+                    "pic": "http://i2.ygimg.cn/pics/hum/2015/100366726/100366726_01_s.jpg?3",
+                    "color": "黑色",
+                    "type": "0",
+                    "activity_desc": "",
+                    "activeid": "",
+                    "activityType": "0",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "79"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "79"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "KOREA",
+                    "merchant": "商家",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "rowid": "7855cf720dde5205e70ffad55ef680e2__u",
+                    "buyStatus": "0",
+                    "id": "100368961001",
+                    "commodityNo": "100368961",
+                    "taxRate": "",
+                    "name": "首尔站：NII 男士 新款 韩版时尚百搭基本款灰色刺绣翻领短袖POLO衫NNUASRM0091-1 韩国 首尔站",
+                    "size": "S",
+                    "number": "1",
+                    "stockNum": "0",
+                    "state": "6",
+                    "pic": "http://i2.ygimg.cn/pics/nii/2015/100368961/100368961_01_s.jpg?3",
+                    "color": "灰色",
+                    "type": "0",
+                    "activity_desc": "",
+                    "activeid": "",
+                    "activityType": "0",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "69"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "69"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "KOREA",
+                    "merchant": "商家",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "rowid": "4688f48884abc57a037f730448a9ed45__u",
+                    "buyStatus": "0",
+                    "id": "100369030002",
+                    "commodityNo": "100369030",
+                    "taxRate": "",
+                    "name": "首尔站：NII 男女同款  韩版时尚百搭休闲款白色圆领印花图案短袖T恤NNUASRM1811-1 韩国 首尔站",
+                    "size": "S",
+                    "number": "1",
+                    "stockNum": "0",
+                    "state": "2",
+                    "pic": "http://i2.ygimg.cn/pics/nii/2015/100369030/100369030_01_s.jpg?4",
+                    "color": "白色",
+                    "type": "0",
+                    "activity_desc": "",
+                    "activeid": "",
+                    "activityType": "0",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "59"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "59"
+                    }
+                },
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "KOREA",
+                    "merchant": "商家",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "rowid": "1b28faba36dc399ec0b94feb85b3c6c7__u",
+                    "buyStatus": "0",
+                    "id": "100366727001",
+                    "commodityNo": "100366727",
+                    "taxRate": "",
+                    "name": "首尔站：HUM 男士 新款 韩版时尚 中灰色条纹圆领短袖T恤H152H011A-1 韩国 首尔站",
+                    "size": "85",
+                    "number": "1",
+                    "stockNum": "0",
+                    "state": "2",
+                    "pic": "http://i2.ygimg.cn/pics/hum/2015/100366727/100366727_01_s.jpg?3",
+                    "color": "中灰色",
+                    "type": "0",
+                    "activity_desc": "",
+                    "activeid": "",
+                    "activityType": "0",
+                    "price1": {
+                        "key": "优购价:",
+                        "value": "79"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "79"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "限时抢",
+            "subtitle": "限时抢",
+            "group_subAmount": "节省600元",
+            "group_totalAmount": "￥199",
+            "car_gifts": {
+                "carGiftTotal": "0",
+                "canGetGifts": "0",
+                "carHasGet": "0",
+                "gifts": []
+            },
+            "car_getGifts": [],
+            "car_productlist": [
+                {
+                    "isfavorite": "false",
+                    "prompt": "",
+                    "mianNO": "",
+                    "merchantid": "KOREA",
+                    "merchant": "商家",
+                    "commodityMark": {
+                        "marks": []
+                    },
+                    "rowid": "7519e581c26fb7e76c7c4bc36d9e0dcf__m",
+                    "buyStatus": "1",
+                    "id": "100247443001",
+                    "commodityNo": "100247443",
+                    "taxRate": "",
+                    "name": "首尔站：ANDEW 男士 新款 韩版个性时尚黑色双肩包O155AB210P-2 韩国 首尔站",
+                    "size": "F",
+                    "number": "1",
+                    "stockNum": "7",
+                    "state": "1",
+                    "pic": "http://i2.ygimg.cn/pics/andew/2015/100247443/100247443_01_s.jpg?4",
+                    "color": "黑色",
+                    "type": "0",
+                    "activity_desc": "33W 首尔站 199专场",
+                    "activeid": "7519e581c26fb7e76c7c4bc36d9e0dcf__m",
+                    "activityType": "2",
+                    "price1": {
+                        "key": "特惠价:",
+                        "value": "199"
+                    },
+                    "price2": {
+                        "key": "小计:",
+                        "value": "199"
+                    }
+                }
+            ]
+        }
+    ],
+    "shopcargroup_ker_zf": [],
+    "msg": "                                                                   ",
+    "msg_hkd": "      ",
+    "msg_ker": "              该商品已经下架,请删除。    ",
+    "msg_ker_zf": "      "
+}
+
 
 let HomeDate = {
     "response": "channels",
@@ -5750,8 +6432,309 @@ let seaGoDate =
     ]
 }
 
+let BrandDate = [{
+  "response": "brands",
+  "totalpage": "8",
+  "brands_title": [
+    {
+      "name": "推荐",
+      "id": ""
+    },
+    {
+      "name": "运动",
+      "id": "eaec32113fea4c87a0a231f5147040e0"
+    },
+    {
+      "name": "女鞋",
+      "id": "5da2011498fd4455afd2e29896a489d6"
+    },
+    {
+      "name": "男鞋",
+      "id": "1e7cd6973c7e4f0ab30e4f4a6281f19d"
+    },
+    {
+      "name": "户外",
+      "id": "32f8ddd36f4d4e5b965a3ac8b79c5c29"
+    },
+    {
+      "name": "男装",
+      "id": "4a93de5dfcf4404c93bcf851228577f3"
+    },
+    {
+      "name": "女装",
+      "id": "07e0610989b54e3381e032ebd05de897"
+    },
+    {
+      "name": "儿童",
+      "id": "5c166c0c914a48ca857ef865919a04e8"
+    }
+  ],
+  "advert_banner": [],
+  "brands_wall": [
+    {
+      "key": "推荐",
+      "value": [
+        {
+          "name": "阿迪达斯",
+          "brandEnglishName": "adidas",
+          "id": "1jJK",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/adidas430571977.jpg"
+        },
+        {
+          "name": "耐克",
+          "brandEnglishName": "nike",
+          "id": "FUYN",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/nike474091448.jpg"
+        },
+        {
+          "name": "百丽",
+          "brandEnglishName": "belle",
+          "id": "jHz8",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/belle430574722.jpg"
+        },
+        {
+          "name": "彪马",
+          "brandEnglishName": "puma",
+          "id": "45O5",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/puma430798128.jpg"
+        },
+        {
+          "name": "天美意",
+          "brandEnglishName": "teenmix",
+          "id": "Fbf5",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/teenmix483675534.jpg"
+        },
+        {
+          "name": "他她",
+          "brandEnglishName": "tata",
+          "id": "iU5u",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/tata430799032.jpg"
+        },
+        {
+          "name": "阿迪三叶草",
+          "brandEnglishName": "adidas Originals",
+          "id": "uOkv",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/adidasclassic430572126.jpg"
+        },
+        {
+          "name": "阿迪休闲",
+          "brandEnglishName": "adidas neo",
+          "id": "Cyz8",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/adidasneo430571994.jpg"
+        },
+        {
+          "name": "匡威",
+          "brandEnglishName": "converse",
+          "id": "MxXO",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/converse430539595.jpg"
+        },
+        {
+          "name": "思加图",
+          "brandEnglishName": "staccato",
+          "id": "Hfjt",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/staccato430798791.jpg"
+        },
+        {
+          "name": "茵奈儿",
+          "brandEnglishName": "innet",
+          "id": "Mckz",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/innet474093572.jpg"
+        },
+        {
+          "name": "百思图",
+          "brandEnglishName": "basto",
+          "id": "YDun",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/basto523422917.jpg"
+        },
+        {
+          "name": "NII",
+          "brandEnglishName": "NII",
+          "id": "0OBG",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/nii504849888.jpg"
+        },
+        {
+          "name": "森达",
+          "brandEnglishName": "senda",
+          "id": "50LY",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/senda430798535.jpg"
+        },
+        {
+          "name": "CHRIS.CHRISTY",
+          "brandEnglishName": "CHRIS.CHRISTY",
+          "id": "Ck9u",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/chrischristy490190045.jpg"
+        },
+        {
+          "name": "HUM",
+          "brandEnglishName": "HUM",
+          "id": "y303",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/hum491912321.jpg"
+        },
+        {
+          "name": "拔佳",
+          "brandEnglishName": "Bata",
+          "id": "6JEt",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/bata430574220.jpg"
+        },
+        {
+          "name": "NEW BALANCE",
+          "brandEnglishName": "New Balance",
+          "id": "kLfX",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/newbalance430797273.jpg"
+        },
+        {
+          "name": "NAIN",
+          "brandEnglishName": "NAIN",
+          "id": "xMU7",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/nain502454197.jpg"
+        },
+        {
+          "name": "李宁",
+          "brandEnglishName": "li-ning",
+          "id": "9nEx",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/lining430547326.jpg"
+        }
+      ]
+    }
+  ]
+},{
+  "response": "brands",
+  "totalpage": "8",
+  "brands_title": [
+    {
+      "name": "推荐",
+      "id": ""
+    },
+    {
+      "name": "运动",
+      "id": "eaec32113fea4c87a0a231f5147040e0"
+    },
+    {
+      "name": "女鞋",
+      "id": "5da2011498fd4455afd2e29896a489d6"
+    },
+    {
+      "name": "男鞋",
+      "id": "1e7cd6973c7e4f0ab30e4f4a6281f19d"
+    },
+    {
+      "name": "户外",
+      "id": "32f8ddd36f4d4e5b965a3ac8b79c5c29"
+    },
+    {
+      "name": "男装",
+      "id": "4a93de5dfcf4404c93bcf851228577f3"
+    },
+    {
+      "name": "女装",
+      "id": "07e0610989b54e3381e032ebd05de897"
+    },
+    {
+      "name": "儿童",
+      "id": "5c166c0c914a48ca857ef865919a04e8"
+    }
+  ],
+  "advert_banner": [],
+  "brands_wall": [
+    {
+      "key": "户外",
+      "catno": "KDT",
+      "value": [
+        {
+          "name": "CAMEL骆驼",
+          "brandEnglishName": "CAMEL",
+          "id": "tbFi",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/camel430538703.jpg"
+        },
+        {
+          "name": "探路者",
+          "brandEnglishName": "TOREAD",
+          "id": "gGBP",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/toread474092089.jpg"
+        },
+        {
+          "name": "RAX",
+          "brandEnglishName": "RAX",
+          "id": "3Re8",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/rax430798279.jpg"
+        },
+        {
+          "name": "洽睦斯",
+          "brandEnglishName": "CHUMS",
+          "id": "pfRA",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/chums493882292.jpg"
+        },
+        {
+          "name": "乐斯菲斯",
+          "brandEnglishName": "The north face",
+          "id": "7XjA",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/thenorthface430799106.jpg"
+        },
+        {
+          "name": "卡鲁森",
+          "brandEnglishName": "clothin",
+          "id": "syPj",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/clothin465039324.jpg"
+        },
+        {
+          "name": "哥伦比亚",
+          "brandEnglishName": "Columbia",
+          "id": "uceo",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/columbia430539563.jpg"
+        },
+        {
+          "name": "JACK WOLFSKIN",
+          "brandEnglishName": "JACK WOLFSKIN",
+          "id": "lJdP",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/jackwolfskin474092593.jpg"
+        },
+        {
+          "name": "卡特",
+          "brandEnglishName": "cat",
+          "id": "Xtf2",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/cat474091969.jpg"
+        },
+        {
+          "name": "迈乐",
+          "brandEnglishName": "merrell",
+          "id": "0BFm",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/merrell430796952.jpg"
+        },
+        {
+          "name": "添柏岚",
+          "brandEnglishName": "Timberland",
+          "id": "7BO7",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/timberland435391619.jpg"
+        },
+        {
+          "name": "巴塔哥尼亚",
+          "brandEnglishName": "Patagonia",
+          "id": "JQfs",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/patagonia487050077.jpg"
+        },
+        {
+          "name": "茵奈儿",
+          "brandEnglishName": "innet",
+          "id": "Mckz",
+          "pic": "http://i1.ygimg.cn/pics/brandlogo/innet474093572.jpg"
+        },
+        {
+          "name": "回力",
+          "brandEnglishName": "Warrior",
+          "id": "Fbf1",
+          "pic": "http://i2.ygimg.cn/pics/brandlogo/warrior430544589.jpg"
+        }
+      ]
+    }
+  ]
+}]
+
+
+
 export default {
     window: window,
     HomeDate:HomeDate,
     seaGoDate:seaGoDate,
+    BrandDate:BrandDate,
+    ShoppingCarDate:ShoppingCarDate,
 }

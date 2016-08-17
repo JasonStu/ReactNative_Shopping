@@ -21,13 +21,14 @@ import ShoppingCart from '../Components/ShoppingCart';
 import AboutMe from '../Components/AboutMe';
 
 import HomeContainer from './HomeContainer';
+import BrandContainer from './BrandContainer';
 
 
 
 
 const tabBarItems = [
     { title: '首页', icon:() => <Icon name={'md-home'} size={30} /> , component: HomeContainer },
-    { title: '品牌', icon:() => <Icon name={'md-bookmark'} size={30} />, component: Brand },
+    { title: '品牌', icon:() => <Icon name={'md-bookmark'} size={30} />, component: BrandContainer },
     { title: '分类', icon: () =><Icon name={'md-apps'} size={30} />, component: Classify },
     { title: '购物车', icon: () =><Icon name={'md-cart'} size={30} /> , component: ShoppingCart },
     { title: '我的', icon:() => <Icon name={'md-contact'} size={30} /> , component: AboutMe },

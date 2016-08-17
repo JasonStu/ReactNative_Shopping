@@ -32,9 +32,8 @@ let isRefreshing = false;
 let isLoading = true;
 let offest = '';
 let tag = '';
-
-
 let limit = 21;//为了使得api跑起来要加上
+
 export default class Home_Main extends Component {
     constructor(props) {
         super(props);
