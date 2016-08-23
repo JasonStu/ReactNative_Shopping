@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "15.2.1",
     "react-native": "0.31.0",
+    "react-native-nav": "^1.1.4",
     "react-native-scrollable-tab-view": "^0.5.3",
     "react-native-swiper": "^1.4.4",
     "react-native-tab-navigator": "^0.3.2",

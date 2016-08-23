@@ -69,7 +69,7 @@ export default class Home18 extends Component {
                         renderRow={this._renderRow}
                         contentContainerStyle={styles.list}
                         enableEmptySections={true}
-                        initialListSize= {40}
+                        initialListSize= {4}
                         style={styles.listView}
                         />
                 </View>

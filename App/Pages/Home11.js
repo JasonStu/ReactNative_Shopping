@@ -40,7 +40,7 @@ export default class Home11 extends Component {
 
                     <Image
                         source={{ uri: this.props.module.moduleDetail[0].image }}
-                        style={{ width: Common.window.width - 10, height: imageHeight }}
+                        style={{ width: Common.window.width - 10, height: imageHeight +10 }}
                         />
                 </TouchableOpacity>
 

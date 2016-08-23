@@ -10,7 +10,6 @@ const initialState = {
 };
 
 let homeReducer = (state = initialState, action) => {
-    console.log(state)
 
     switch (action.type) {
         case types.FETCH_HOME_LIST, types.FETCH_SEAUGO_LIST:
@@ -21,7 +20,6 @@ let homeReducer = (state = initialState, action) => {
 
         case types.RECEIVE_HOME_LIST:
 
-            console.log(action);
 
             return Object.assign({}, state, {
                 HomeList: action.homeList,
@@ -30,7 +28,6 @@ let homeReducer = (state = initialState, action) => {
             })
         case types.RECEIVE_SEAUGO_LIST:
 
-            console.log(action);
 
             return Object.assign({}, state, {
                 UGOList: action.uGoList,

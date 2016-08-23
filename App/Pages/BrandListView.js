@@ -81,7 +81,7 @@ export default class BrandListView extends Component {
                     renderRow={this._renderRow}
                     contentContainerStyle={styles.list}
                     enableEmptySections={true}
-                    initialListSize= {15}
+                    initialListSize= {10}
                     style={styles.listView}
                     />
             </View>

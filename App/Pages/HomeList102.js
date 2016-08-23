@@ -49,7 +49,7 @@ export default class HomeList extends Component {
                     renderRow={this._renderRow}
                     contentContainerStyle={styles.list}
                     enableEmptySections={true}
-                    initialListSize= {8}
+                    initialListSize= {4}
                     style={styles.listView}
                     />
             </View>

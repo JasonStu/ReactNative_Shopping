@@ -58,7 +58,7 @@ export default class Home12 extends Component {
                         renderRow={this._renderRow}
                         contentContainerStyle={styles.list}
                         enableEmptySections={true}
-                        initialListSize= {10}
+                        initialListSize= {4}
                         style={styles.listView}
                         />
                 </View>

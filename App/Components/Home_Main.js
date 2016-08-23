@@ -76,7 +76,7 @@ export default class Home_Main extends Component {
                         dataSource={this.state.dataSource.cloneWithRows(homeList.module ? homeList.module : []) }
                         renderRow={this._renderRow}
                         enableEmptySections={true}
-                        initialListSize= {40}
+                        initialListSize= {4}
                         style={styles.listView}
                         />
                 }
@@ -195,8 +195,9 @@ export default class Home_Main extends Component {
 }
 const styles = StyleSheet.create({
     container: {
+        flex:1,
         width: Common.window.width,
-        height: Common.window.height - 90 - 60,
+        height: Common.window.height -90-55,
         backgroundColor: 'rgb(240, 240, 240)',
         
     },
@@ -206,7 +207,7 @@ const styles = StyleSheet.create({
 
 
     listView: {
-        height: Common.window.height - 90 - 60,
+        
         backgroundColor: 'white',
     },
     cellStyle:{
