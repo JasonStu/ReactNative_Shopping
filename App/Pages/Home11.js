@@ -23,10 +23,12 @@ export default class Home11 extends Component {
     }
     render() {
         let imageHeight = parseInt((Platform.OS === 'ios') ? this.props.module.moduleHeight / 2 : this.props.module.moduleHeight);
+        let imageWidth = parseInt((Platform.OS === 'ios') ? this.props.module.moduleWidth / 2 : this.props.module.moduleHeight);
+
         // console.log('imageHeight====>' + imageHeight);
         return (
 
-            <View style={{ flex: 1, flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center',backgroundColor: 'rgb(240, 240, 240)',height:this.props.module.moduleHeight!=='50'? imageHeight+15 :imageHeight}}>
+            <View style={{ flex:1,flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center',backgroundColor: 'rgb(240, 240, 240)'}}>
                 <View style={{ alignItems: 'center',flexDirection: 'row', backgroundColor: 'rgb(240, 240, 240)', height: this.props.module.moduleTitle !== '' ? 30 : 0 }}>
                     <View style={{backgroundColor:'red',width:5,height: this.props.module.moduleTitle !== '' ? 20 : 0}}>
                     </View>
@@ -40,7 +42,7 @@ export default class Home11 extends Component {
 
                     <Image
                         source={{ uri: this.props.module.moduleDetail[0].image }}
-                        style={{ width: Common.window.width - 10, height: imageHeight +10 }}
+                        style={{ width: Common.window.width , height: Common.window.width *imageHeight/ imageWidth}}
                         />
                 </TouchableOpacity>
 

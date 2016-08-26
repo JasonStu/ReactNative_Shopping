@@ -7,8 +7,6 @@ const initialState = {
     ShopDate: {},
     isLoading: true,
     isRefreshing: false,
-    //所有价格
-    allPrices: 0,
     //carbar 全选的状态
     isSelectAll: false,
     //单选一个
@@ -23,11 +21,14 @@ const initialState = {
     selectShopArr: [],
     //所有商品数组
     allShopArr: [],
+    //改变购物车状态
+    isChangeShopCar: false,
 
 };
 
 
 let shopCarReducer = (state = initialState, action) => {
+
     // console.log(state)
     switch (action.type) {
         //获取全部
@@ -44,7 +45,6 @@ let shopCarReducer = (state = initialState, action) => {
                 object.car_productlist.map((object, i) => {
                     state.allShopArr.push(object);
                     state.selectShopArr.push(object);
-                    state.allPrices += parseInt(object.price1.value);
 
                 });
             });
@@ -54,6 +54,7 @@ let shopCarReducer = (state = initialState, action) => {
                 isRefreshing: false,
                 isLoading: false,
                 isSelectAll: true,
+
             })
         //全选全部
         case types.FETCH_SELECTAll_LIST:
@@ -63,16 +64,15 @@ let shopCarReducer = (state = initialState, action) => {
 
         case types.SELECTAll_SHOPCART_LIST:
             state.selectShopArr = [];
+            // if (action.isSelectAll === true) { state.allPrices = 0 }
             state.ShopDate.shopcargroup.forEach(function (object) {
                 object.car_productlist.forEach(function (object) {
                     object.buyStatus = action.isSelectAll;
 
-                    if (action.isSelectAll === true) {
-                        state.allPrices += parseInt(object.price1.value);
+                    if (action.isSelectAll === true && object.state === '1') {
                         state.selectShopArr.push(object);
 
-                    } else {
-                        state.allPrices -= parseInt(object.price1.value);
+                    } else if (action.isSelectAll === false && object.state === '0'){
                         state.selectShopArr.pop(object);
 
                     }
@@ -104,17 +104,15 @@ let shopCarReducer = (state = initialState, action) => {
                     }
                     // console.log(state.selectShopArr.indexOf(object))
                     if (action.isSelectOne === true) {
-                        if (object.id == action.shopID) {
-                            state.allPrices += parseInt(object.price1.value);
+                        if (object.id === action.shopID) {
 
                             state.selectShopArr.push(object);
                         }
 
                     } else {
-                        if (object.id == action.shopID) {
-                            state.allPrices -= parseInt(object.price1.value);
+                        if (object.id === action.shopID) {
 
-                            state.selectShopArr.pop(object);
+                            state.selectShopArr.splice(state.selectShopArr.indexOf(object), 1)
 
                         }
                     }
@@ -122,14 +120,6 @@ let shopCarReducer = (state = initialState, action) => {
                 })
 
             })
-            // state.ShopDate.shopcargroup.forEach(function (object) {
-            //     object.car_productlist.forEach(function (object) {
-            //           if (object.buyStatus === true){
-            //               selectShopArr.push(object.buyStatus);
-            //         } 
-            //     }, this);
-
-            // }, this);
 
             return Object.assign({}, state, {
                 ShopDate: state.ShopDate,
@@ -139,7 +129,69 @@ let shopCarReducer = (state = initialState, action) => {
                 isLoading: false,
             })
 
+        //改变购物车状态
+        case types.CHANEG_SHOPCAR_LIST:
+            return Object.assign({}, state, {
+                isChangeShopCar: action.isChange
+            })
 
+        //改变商品数量
+        case types.CHANEG_SHOP_COUNT:
+            state.ShopDate.shopcargroup.forEach(function (object) {
+                object.car_productlist.forEach(function (object) {
+                    var shopIndex = state.selectShopArr.indexOf(object);
+
+                    if (object.id === action.shopID && action.isChangeCount === true) {
+                        object.number++;
+
+                        // if (object.number > 0 && object.number <= 1) {
+                        //     object.buyStatus = true;
+                        //     state.selectShopArr.splice(shopIndex, 0, object)
+                        //     state.isSelectAll = state.allShopArr.length == state.selectShopArr.length;
+
+                        // }
+
+                    } else if (object.id === action.shopID && object.number > 1 && action.isChangeCount === false) {
+
+                        object.number--;
+
+                        // if (object.number < 1) {
+                        //     // alert('执行')
+                        //     object.buyStatus = false;
+                        //     state.selectShopArr.splice(shopIndex, 1)
+                        //     state.isSelectAll = state.allShopArr.length == state.selectShopArr.length;
+
+                        // }
+
+                    }
+                }, this);
+
+            }, this);
+            return Object.assign({}, state, {
+                ShopDate: state.ShopDate,
+            })
+
+        //删除商品数量
+        case types.DELETE_SHOPCAR_LIST:
+            var isDelete = false;
+            // var deObj = {};
+            // var shopIndex = -100;
+            state.ShopDate.shopcargroup.forEach(function (object) {
+
+                object.car_productlist.forEach(function (object) {
+                   var  shopIndex = state.selectShopArr.indexOf(object);
+
+                    if (state.selectShopArr.indexOf(object) !== -1) {
+                        object.state = '0';
+                        state.selectShopArr.splice(state.selectShopArr.indexOf(object), 1)
+                        state.allShopArr.splice(state.selectShopArr.indexOf(object), 1)
+                    }
+                }, this);
+
+            }, this);
+            return Object.assign({}, state, {
+                ShopDate: state.ShopDate,
+            })
 
         default:
             return state;
@@ -147,4 +199,8 @@ let shopCarReducer = (state = initialState, action) => {
 }
 export default shopCarReducer;
 
+let method = (object, array) => {
+    array.forEach(function (element) {
 
+    }, this);
+}

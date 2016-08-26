@@ -32,7 +32,7 @@ export default class BrandListView extends Component {
     }
 
     shouldComponentUpdate(nextProps) {
-        if (nextProps.module !== this.props.module){
+        if (nextProps.module !== this.props.module) {
             return true;
         }
         return false;
@@ -81,7 +81,7 @@ export default class BrandListView extends Component {
                     renderRow={this._renderRow}
                     contentContainerStyle={styles.list}
                     enableEmptySections={true}
-                    initialListSize= {10}
+                    initialListSize= {15}
                     style={styles.listView}
                     />
             </View>

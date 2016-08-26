@@ -76,7 +76,7 @@ export default class Home_Main extends Component {
                         dataSource={this.state.dataSource.cloneWithRows(homeList.module ? homeList.module : []) }
                         renderRow={this._renderRow}
                         enableEmptySections={true}
-                        initialListSize= {4}
+                        initialListSize= {1}
                         style={styles.listView}
                         />
                 }

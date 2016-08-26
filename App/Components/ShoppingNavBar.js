@@ -9,6 +9,7 @@ import NavBar, { NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 const propTypes = {
     onPress2Left: PropTypes.func,
     onPress2Right: PropTypes.func,
+    RightTitle:PropTypes.string
 };
 
 
@@ -26,7 +27,7 @@ export default class ShoppingNavBar extends Component {
                 </NavTitle>
                 <NavButton onPress={this.props.onPress2Right }>
                     <NavButtonText style={styles.buttonText}>
-                        {"编辑"}
+                        {this.props.RightTitle}
                     </NavButtonText>
                 </NavButton>
             </NavBar>

@@ -51,7 +51,7 @@ export default class ShoppingCarListView extends Component {
                             renderRow={this._renderRow}
 
                             enableEmptySections={true}
-                            initialListSize= {4}
+                            initialListSize= {10}
                             style={styles.listView}
                             />
                     </View>

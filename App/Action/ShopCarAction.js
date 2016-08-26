@@ -32,37 +32,40 @@ export let ShopCarAction = (isRefreshing, isLoading) => {
 
 }
 
-export let selectAll = (isSelectAll,isLoading) => {
-    console.log('调动成功')
-    let URL = 'http://api.huaban.com/fm/wallpaper/pins?limit=';
-    URL += 12;
-    URL += '&max=';
-    URL += '&tag=';
+export let selectAll = (isSelectAll, isLoading) => {
+    // console.log('调动成功')
+    // let URL = 'http://api.huaban.com/fm/wallpaper/pins?limit=';
+    // URL += 12;
+    // URL += '&max=';
+    // URL += '&tag=';
     return dispatch => {
-        dispatch(feachSelectAllList(isLoading));
-        return Util.get(URL, (response) => {
-            // console.log(response)
-            //由于没有api 只能拿真实的固定数据
-            console.log('全选购物车数据')
         dispatch(selectAllShopCartList(isSelectAll));
-        }, (error) => {
-            console.log('加载首页数据error==>' + error);
-            // debugger
-        dispatch(selectAllShopCartList(isSelectAll));
-        });
+
+        // dispatch(feachSelectAllList(isLoading));
+
+        // return Util.get(URL, (response) => {
+        //     // console.log(response)
+        //     //由于没有api 只能拿真实的固定数据
+        //     console.log('全选购物车数据')
+        //     dispatch(selectAllShopCartList(isSelectAll));
+        // }, (error) => {
+        //     console.log('加载首页数据error==>' + error);
+        //     // debugger
+        //     dispatch(selectAllShopCartList(isSelectAll));
+        // });
     }
 }
 
 
-export let selectOne = (shopID,isSelectOne,isLoading) => {
-    console.log(shopID+'==================>'+isSelectOne)
-    let URL = 'http://api.huaban.com/fm/wallpaper/pins?limit=';
-    URL += 12;
-    URL += '&max=';
-    URL += '&tag=';
+export let selectOne = (shopID, isSelectOne, isLoading) => {
+    // console.log(shopID+'==================>'+isSelectOne)
+    // let URL = 'http://api.huaban.com/fm/wallpaper/pins?limit=';
+    // URL += 12;
+    // URL += '&max=';
+    // URL += '&tag=';
     return dispatch => {
         // dispatch(feachSelectOneList(isLoading));
-                dispatch(selectOneShopCartList(isSelectOne,shopID));
+        dispatch(selectOneShopCartList(isSelectOne, shopID));
 
         // return Util.get(URL, (response) => {
         //     // console.log(response)
@@ -77,6 +80,23 @@ export let selectOne = (shopID,isSelectOne,isLoading) => {
     }
 }
 
+export let changeShopcar = (isChange) => {
+    return dispatch => {
+        dispatch(changeShopcarList(isChange));
+    }
+}
+
+export let changeShopCount = (isChangeCount, shopID) => {
+    return dispatch => {
+        dispatch(changeShop(isChangeCount, shopID));
+    }
+}
+
+export let deleteShopList = ( shopID) => {
+     return dispatch => {
+        dispatch(deleteShop( shopID));
+    }
+}
 
 
 
@@ -107,7 +127,7 @@ let selectAllShopCartList = (isSelectAll) => {
     }
 }
 
-let feachSelectAllList = ( isLoading) => {
+let feachSelectAllList = (isLoading) => {
     return {
         type: types.FETCH_SELECTAll_LIST,
         isLoading: isLoading,
@@ -115,11 +135,11 @@ let feachSelectAllList = ( isLoading) => {
 }
 
 //选择单个
-let selectOneShopCartList = (isSelectOne,shopID) => {
+let selectOneShopCartList = (isSelectOne, shopID) => {
     return {
         type: types.SELECTONE_SHOPCART_LIST,
         isSelectOne: isSelectOne,
-        shopID:shopID
+        shopID: shopID
 
     }
 }
@@ -131,3 +151,28 @@ let feachSelectOneList = (isLoading) => {
     }
 }
 
+//改变购物车数量
+let changeShopcarList = (isChange) => {
+    return {
+        type: types.CHANEG_SHOPCAR_LIST,
+        isChange: isChange,
+    }
+}
+
+//改变商品数量
+let changeShop = (isChangeCount, shopID) => {
+    return {
+        type: types.CHANEG_SHOP_COUNT,
+        isChangeCount: isChangeCount,
+        shopID: shopID
+
+    }
+}
+
+//删除商品
+let deleteShop = (shopID) => {
+    return {
+        type: types.DELETE_SHOPCAR_LIST,
+        shopID: shopID
+    }
+}
