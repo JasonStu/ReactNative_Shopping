@@ -26,7 +26,7 @@ class Splash extends React.Component {
           name: 'TabBarView'
         });
       });
-    }, 2500);
+    }, 2000);
   }
   componentWillUnmount() {
     this.timer && clearTimeout(this.timer);
@@ -37,7 +37,7 @@ class Splash extends React.Component {
       <View style={{flex:1}}>
       <Image
         style={{flex:1,width:width,height:height}}
-        source={require('../Img/welcome.png')}
+        source={require('../Img/10.png')}
         />
       </View>
     );

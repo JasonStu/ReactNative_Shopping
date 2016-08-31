@@ -1,9 +1,7 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
+/**
+ * Created by jason on 16/7/14.
+ */
 import React, { Component } from 'react';
 import {
     AppRegistry,
@@ -72,6 +70,7 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        top:20,
 
         backgroundColor: 'rgb(240, 240, 240)'
     },

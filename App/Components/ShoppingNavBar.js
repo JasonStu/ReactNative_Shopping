@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 import React, {Component, PropTypes} from 'react';
 import {
     StyleSheet,
@@ -36,9 +46,9 @@ export default class ShoppingNavBar extends Component {
 }
 const styles = StyleSheet.create({
     statusBar: {
-        backgroundColor: '#68efad',
+        backgroundColor: 'white',
         // marginTop:-20,
-        height: -20,
+        // height: -20,
     },
     navBar: {
         backgroundColor: 'white',

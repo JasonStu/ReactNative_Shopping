@@ -6,7 +6,6 @@ import {
     View,
     TouchableOpacity,
     Image,
-    ScrollView,
     ListView,
     PixelRatio
 } from 'react-native';
@@ -23,33 +22,33 @@ export default class HomeSwiper extends Component {
     render() {
         return (
             <Swiper
-            height={150}
-            loop={true}
-            autoplay={true}
-            dot={<View style={styles.customDot} />}
-            activeDot={<View style={styles.customActiveDot} />}
-            paginationStyle={{
-                bottom: 10
-            }}
-            >
-            {this.props.bannerDate.moduleDetail.map((banner) => {
-                return (
-                    <TouchableOpacity key={banner.title} activeOpacity={0.75}
-                                        onPress={()=>{alert('我是banner')} }
->
-                        <Image
-                            style={styles.bannerImage}
-                            source={{ uri: banner.image }}
-                            />
-                    </TouchableOpacity>
-                )
-            }) }
-        </Swiper>);
+                height={150}
+                loop={true}
+                autoplay={true}
+                dot={<View style={styles.customDot} />}
+                activeDot={<View style={styles.customActiveDot} />}
+                paginationStyle={{
+                    bottom: 10
+                }}
+                >
+                {this.props.bannerDate.moduleDetail.map((banner) => {
+                    return (
+                        <TouchableOpacity key={banner.title} activeOpacity={0.75}
+                            onPress={() => { alert('我是banner') } }
+                            >
+                            <Image
+                                style={styles.bannerImage}
+                                source={{ uri: banner.image }}
+                                />
+                        </TouchableOpacity>
+                    )
+                }) }
+            </Swiper>);
     }
 }
 
 const styles = StyleSheet.create({
-        customDot: {
+    customDot: {
         backgroundColor: '#ccc',
         height: 1.5,
         width: 15,
@@ -65,7 +64,7 @@ const styles = StyleSheet.create({
         marginRight: 2,
         marginTop: 2,
     },
-        bannerImage: {
+    bannerImage: {
         height: 150,
         width: Common.window.width,
     },

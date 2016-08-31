@@ -22,13 +22,13 @@ export default class Home11 extends Component {
 
     }
     render() {
-        let imageHeight = parseInt((Platform.OS === 'ios') ? this.props.module.moduleHeight / 2 : this.props.module.moduleHeight);
-        let imageWidth = parseInt((Platform.OS === 'ios') ? this.props.module.moduleWidth / 2 : this.props.module.moduleHeight);
+        let imageHeight= this.props.module.moduleHeight / 2 ;
+        let imageWidth = this.props.module.moduleWidth / 2;
 
         // console.log('imageHeight====>' + imageHeight);
         return (
 
-            <View style={{ flex:1,flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center',backgroundColor: 'rgb(240, 240, 240)'}}>
+            <View style={{flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center',backgroundColor: 'rgb(240, 240, 240)'}}>
                 <View style={{ alignItems: 'center',flexDirection: 'row', backgroundColor: 'rgb(240, 240, 240)', height: this.props.module.moduleTitle !== '' ? 30 : 0 }}>
                     <View style={{backgroundColor:'red',width:5,height: this.props.module.moduleTitle !== '' ? 20 : 0}}>
                     </View>

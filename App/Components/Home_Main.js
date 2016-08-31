@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import React, { Component } from 'react';
 import {
     AppRegistry,
@@ -6,7 +12,6 @@ import {
     View,
     TouchableOpacity,
     Image,
-    ScrollView,
     ListView,
     PixelRatio,
     InteractionManager,
@@ -32,7 +37,7 @@ let isRefreshing = false;
 let isLoading = true;
 let offest = '';
 let tag = '';
-let limit = 21;//为了使得api跑起来要加上
+let limit = 21;
 
 export default class Home_Main extends Component {
     constructor(props) {
@@ -55,13 +60,11 @@ export default class Home_Main extends Component {
     }
     render() {
         const { HomeReducer } = this.props;
-        console.log(this.props);
         let homeList = [];
         if (this.props.type === 1) { //首页
 
             homeList = HomeReducer.HomeList;
         } else {
-            console.log(this.props);
 
             homeList = HomeReducer.UGOList;
 
@@ -93,9 +96,8 @@ export default class Home_Main extends Component {
             case 101:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <HomeSwioer bannerDate={rowDate}/>
-                        </View>
 
                     );
                 }
@@ -104,83 +106,74 @@ export default class Home_Main extends Component {
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <HomeList102 listDate={rowDate}/>
 
-                        </View>
                     );
                 }
             case 104:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home104 module={rowDate}/>
-                        </View>
                     );
                 }
             case 18:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home18 listDate={rowDate}/>
-                        </View>
                     );
                 }
             case 11:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home11 module={rowDate}/>
                             
-                        </View>
                     );
                 }
             case 4:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home4 module={rowDate}/>
-                        </View>
                     );
                 }
             case 1:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home1 module={rowDate}/>
-                        </View>
                     );
                 }
             case 10:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home10 module={rowDate}/>
-                        </View>
                     );
                 }
             case 8:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home8 module={rowDate}/>
-                        </View>
                     );
                 }
             case 12:
                 if (rowIdentities == parseInt(rowDate.modulePosition) - 1) {
 
                     return (
-                        <View style= {styles.cellStyle}>
+                        
                             <Home12 module={rowDate}/>
-                        </View>
                     );
                 }
             default:

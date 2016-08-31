@@ -15,7 +15,6 @@ export let HomeAction = (type, tag, offest, limit, isRefreshing, isLoading) => {
     offest ? URL += '&max=' + offest : URL += '&max=';
     tag ? URL += '&tag=' + encode_utf8(tag) : URL += '&tag='
     console.log(URL)
-
     return dispatch => {
         // dispatch(feachHomeList(isRefreshing, isLoading));
         if (type === 1) { //首页

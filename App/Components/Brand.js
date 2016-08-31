@@ -1,7 +1,5 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Created by jason on 16/7/14.
  */
 
 import React, { Component } from 'react';
@@ -150,6 +148,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
+     top:20,
   },
   mainViewStyle: {
     justifyContent: 'center',

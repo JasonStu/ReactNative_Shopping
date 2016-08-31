@@ -22,7 +22,7 @@ export default class Home104 extends Component {
     render() {
         return (
 
-            <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', height: 40, backgroundColor: 'white' }}>
+            <View style={{  flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', height: 40, backgroundColor: 'white' }}>
                 <Image
                     source={{ uri: this.props.module.moduleDetail[0].image }}
                     style={{ width: 100, height: 20, marginLeft: 10 }}
