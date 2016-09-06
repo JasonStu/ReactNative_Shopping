@@ -1,4 +1,4 @@
-# RN-BiZhi
+# ReactNative_Shopping
 仿优购网 use RN and Redux
 #主要实现电商界面和购物车功能
 基于ReactNative和Redux实现了电商类APP,持续更新,希望一起学习讨论.
