@@ -34,13 +34,13 @@ export default class AboutMe extends Component {
           <Text style={styles.welcome}>
             ReacNative
           </Text>
-          <Text style={{ position: 'absolute', marginTop: 80, marginLeft: 30,color:'white' }}>
+          <Text style={{ position: 'absolute', marginTop: 80, marginLeft: 30, color: 'white' }}>
             普通会员
           </Text>
-          <Text style={{ position: 'absolute', top: 30, marginLeft: Common.window.width - 50 ,color:'white'}}>
+          <Text style={{ position: 'absolute', top: 30, marginLeft: Common.window.width - 50, color: 'white' }}>
             设置
           </Text>
-          <Text style={{ position: 'absolute', marginLeft: Common.window.width - 80, bottom: 10,color:'white' }}>
+          <Text style={{ position: 'absolute', marginLeft: Common.window.width - 80, bottom: 10, color: 'white' }}>
             账户管理 >
           </Text>
         </Image>
@@ -52,7 +52,7 @@ export default class AboutMe extends Component {
         </Text>
         <View style={{ width: Common.window.width, height: 2 / PixelRatio.get(), backgroundColor: 'gray', marginTop: 40 }}>
         </View>
-        <View style={{ padding:10, flex: 1, flexDirection: 'row', justifyContent: 'space-between',backgroundColor: 'white'  }}>
+        <View style={{ padding: 10, flex: 1, flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
           <ImageButton
             imageStyle={{
               width: 30,
@@ -82,15 +82,15 @@ export default class AboutMe extends Component {
             />
 
         </View>
-   
 
-        <Text style={{ marginTop:10,width: Common.window.width, height: 40, position: 'absolute', padding: 10, fontSize: 18 ,backgroundColor:'white'}}>
+
+        <Text style={{ marginTop: 10, width: Common.window.width, height: 40, position: 'absolute', padding: 10, fontSize: 18, backgroundColor: 'white' }}>
           我的钱包
         </Text>
         <View style={{ width: Common.window.width, height: 2 / PixelRatio.get(), backgroundColor: 'gray', marginTop: 50 }}>
         </View>
 
-        <View style={{ padding: 15, flex: 1, flexDirection: 'row', justifyContent: 'space-between',backgroundColor:'white' }}>
+        <View style={{ padding: 15, flex: 1, flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
           <TextButton
 
             onPress={() => { } }
@@ -119,8 +119,8 @@ export default class AboutMe extends Component {
             text={'优红利'}
             />
         </View>
-     
-        <View style={{marginTop:10, padding: 15, flex: 1, flexDirection: 'row', justifyContent: 'space-between',backgroundColor:'white' }}>
+
+        <View style={{ marginTop: 10, padding: 15, flex: 1, flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
           <ImageButton
             imageStyle={{
               width: 30,
@@ -159,8 +159,8 @@ export default class AboutMe extends Component {
             />
 
         </View>
-    
-        <TouchableOpacity style={{marginTop:10, flexDirection: 'row', alignItems: 'center', height: 50, position: 'relative',backgroundColor:'white' }}activeOpacity={0.75}>
+
+        <TouchableOpacity style={{ marginTop: 10, flexDirection: 'row', alignItems: 'center', height: 50, position: 'relative', backgroundColor: 'white' }}activeOpacity={0.75}>
           <Image
             source={require('../Img/ri.png') }
             style={{ width: 30, height: 30, marginLeft: 20 }}
@@ -173,8 +173,8 @@ export default class AboutMe extends Component {
           </Text>
 
         </TouchableOpacity>
-  
-        <TouchableOpacity style={{ marginTop:10,flexDirection: 'row', alignItems: 'center', height: 50, position: 'relative' ,backgroundColor:'white'}}activeOpacity={0.75}>
+
+        <TouchableOpacity style={{ marginTop: 10, flexDirection: 'row', alignItems: 'center', height: 50, position: 'relative', backgroundColor: 'white' }}activeOpacity={0.75}>
           <Image
             source={require('../Img/kf.png') }
             style={{ width: 30, height: 30, marginLeft: 20 }}
@@ -187,7 +187,7 @@ export default class AboutMe extends Component {
           </Text>
 
         </TouchableOpacity>
-          <View style={{ marginTop: 0, width: Common.window.width, height: 5, backgroundColor: 'rgb(240,240,240)' }}>
+        <View style={{ marginTop: 0, width: Common.window.width, height: 5, backgroundColor: 'rgb(240,240,240)' }}>
         </View>
 
       </ScrollView>
