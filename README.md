@@ -1,5 +1,6 @@
 #ReactNative_Shopping
 开源动力,仿优购网 use RN and Redux
+本项目适合有RN基础和Redux基础
 #主要实现电商基础界面和购物车功能
 基于ReactNative和Redux实现了电商类APP,持续更新,希望一起学习讨论.
 1.这个app 主要使用Redux 结合所学的结合一些开源第三方实现!主要对购物车功能实现了实时监控!
